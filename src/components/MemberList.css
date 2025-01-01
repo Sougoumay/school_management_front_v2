@@ -1,0 +1,68 @@
+/* Styles pour le tableau */
+table {
+    width: 100%;  /* Prendre toute la largeur du conteneur */
+    border-collapse: collapse;  /* Supprimer les espaces entre les cellules */
+    margin-top: 20px;  /* Ajouter un peu d'espace au-dessus du tableau */
+}
+
+th, td {
+    padding: 12px 15px;  /* Espacement interne dans les cellules */
+    text-align: left;  /* Alignement du texte à gauche */
+}
+
+th {
+    background-color: #4CAF50;  /* Couleur de fond des entêtes (vert) */
+    color: white;  /* Texte blanc */
+    font-weight: bold;  /* Mettre le texte en gras */
+}
+
+td {
+    background-color: #f9f9f9;  /* Fond clair pour les cellules de données */
+    border: 1px solid #ddd;  /* Bordure fine et claire */
+}
+
+tr:nth-child(even) td {
+    background-color: #f1f1f1;  /* Lignes paires avec une couleur légèrement différente */
+}
+
+tr:hover {
+    background-color: #ddd;  /* Survol d'une ligne avec une couleur grise légère */
+}
+
+button {
+    background-color: #4CAF50;  /* Vert similaire aux entêtes */
+    color: white;  /* Texte blanc */
+    border: none;  /* Pas de bordure */
+    padding: 10px 15px;  /* Espacement autour du texte du bouton */
+    cursor: pointer;  /* Curseur en forme de main */
+    font-size: 16px;
+    border-radius: 5px;  /* Bords arrondis */
+}
+
+button:hover {
+    background-color: #45a049;  /* Couleur plus foncée au survol */
+}
+
+/* Styles pour le formulaire */
+form {
+    margin-bottom: 20px;  /* Espace en dessous du formulaire */
+}
+
+input[type="text"] {
+    padding: 8px 12px;  /* Espacement interne pour l'input */
+    font-size: 16px;  /* Taille de la police */
+    border: 1px solid #ddd;  /* Bordure gris clair */
+    border-radius: 4px;  /* Coins arrondis */
+    width: 200px;  /* Largeur fixe de l'input */
+    margin-right: 10px;  /* Espace entre l'input et le bouton */
+}
+
+input[type="text"]:focus {
+    border-color: #4CAF50;  /* Bordure verte lors du focus */
+    outline: none;  /* Supprimer la bordure bleue par défaut */
+}
+
+label {
+    font-size: 16px;  /* Taille de la police pour l'étiquette */
+    margin-right: 10px;  /* Espacement entre le label et l'input */
+}
