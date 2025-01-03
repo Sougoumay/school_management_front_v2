@@ -9,7 +9,7 @@ export interface Member {
 const API_URL = process.env.REACT_APP_API_URL;
 export const getMembers = async (type: string = '',query: string = ''): Promise<Member[]> => {
     try {
-        let url = type ? `${API_URL}/api/members?type=${type}` : `${API_URL}/api/members`;
+        let url = type ? `${API_URL}/api/v2/members?type=${type}` : `${API_URL}/api/v2/members`;
         if (query) {
             url = type ? `${url}&query=${query}` : `${url}?query=${query}`;
         }
