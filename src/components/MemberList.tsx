@@ -36,7 +36,7 @@ const MemberList: React.FC = () => {
 
     useEffect(() => {
         fetchMembers(type, query); // Chargement initial avec les valeurs actuelles
-    }, []); // Appel uniquement au montage initial
+    }, [type,query]); // Appel uniquement au montage initial
 
     if (loading) {
         return <p>Loading...</p>;
